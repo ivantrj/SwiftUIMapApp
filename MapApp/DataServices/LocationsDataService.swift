@@ -65,6 +65,19 @@ class LocationsDataService {
                 "paris-louvre-3",
             ],
             link: "https://en.wikipedia.org/wiki/Louvre"),
+        Location(
+            name: "Hohensalzburg Castle",
+            cityName: "Salzburg",
+            coordinates: CLLocationCoordinate2D(latitude: 47.7934, longitude: 13.0458),
+            description: "Hohensalzburg Castle is a majestic fortress that overlooks the city of Salzburg, Austria. It is one of the largest and best-preserved medieval castles in Europe. The castle offers stunning panoramic views of Salzburg and the surrounding countryside.",
+            imageNames: [
+                "salzburg-castle-1",
+                "salzburg-castle-2",
+                "salzburg-castle-3",
+            ],
+            link: "https://en.wikipedia.org/wiki/Hohensalzburg_Castle"
+        ),
+
     ]
     
 }
