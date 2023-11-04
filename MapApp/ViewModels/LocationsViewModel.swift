@@ -9,19 +9,13 @@ import Foundation
 import MapKit
 import SwiftUI
 
-
 class LocationsViewModel: ObservableObject {
     
     // All loaded locations
     @Published var locations: [Location]
     
-    //Current location on map
-    @Published var mapLocation: Location {
-        didSet {
-            updateMapRegion(location: mapLocation)
-        }
-    }
-    
+    // Current location on map
+    @Published var mapLocation: Location
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
@@ -39,6 +33,5 @@ class LocationsViewModel: ObservableObject {
                 span: mapSpan
             )
         }
-        
     }
 }
